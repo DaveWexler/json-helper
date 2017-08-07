@@ -36,7 +36,7 @@ The others are:
 This file has a sample html file which includes two text areas with the proper class for the javascript/css to work. Things to note in this file are that:
 
 1. When the page loads, a custom modal is appended to the end of the body section. It's unlikely, but if your IDs/classes match the names of stuff in this modal, it'll stop working.
-2. Each text area has an ID attribute. This is required so that the script knows where to put your stringified JSON when you click save. It'll add the final output JSON to the textarea with the ID in which you clicked to open the modal. The ID can be anything you like--there is no required convention for this part--it just needs to be there.
+2. Each text area has an ID attribute. This is required so that the script knows where to put your stringified JSON when you click outside the modal. It'll add the final output JSON to the textarea with the ID in which you clicked to open the modal. The ID can be anything you like--there is no required convention for this part--it just needs to be there.
 3. Each text area that you want to trigger the script for needs to have a class of "json-input-bootstrap-rails".
 
 #### json_input_bootstrap_rails.css
@@ -56,10 +56,9 @@ These are the classes and IDs you need to make the Javascript (as currently writ
 3. Button to add a row in the form: ID of "add-row"
 4. Delete a row button (looks like an 'X'): class of "delete-button"
 5. Cancel button (just closes/hides the modal): ID of "cancel-button"
-6. Save button: ID of "save-button"
-7. The form within the modal content: ID of "json-form"
+6. The form within the modal content: ID of "json-form"
 
-That's it I think. Enjoy your auto-JSONified text!
+That's it! Enjoy your auto-JSONified text!
 
 ## Development
 
